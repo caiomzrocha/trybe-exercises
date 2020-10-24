@@ -20,4 +20,6 @@ switch (peca) {
     break;
   case 'rei':
     console.log('Move uma casa em qualquer direção.');
+  default:
+    console.log('Peça inválida.');
 }
