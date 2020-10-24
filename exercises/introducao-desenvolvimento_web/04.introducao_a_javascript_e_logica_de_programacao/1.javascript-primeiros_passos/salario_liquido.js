@@ -5,6 +5,9 @@ let inss;
 let impostoDeRenda;
 let parcelaImpostoDeRenda;
 
+if (salarioBruto < 0 || !Number(salarioBruto))
+  return console.log('[-] erro: salário inválido.')
+
 if (salarioBruto <= 1556.94)
   inss = 0.08 * salarioBruto;
 else if (salarioBruto <= 2594.92)
