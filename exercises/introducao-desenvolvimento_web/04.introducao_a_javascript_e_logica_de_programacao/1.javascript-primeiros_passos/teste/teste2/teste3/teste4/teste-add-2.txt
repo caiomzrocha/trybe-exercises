@@ -1,1 +1,0 @@
-testando add em um subdiretorio com o diretorio imediatamente anterior ainda nao commitado.
