@@ -1,6 +1,6 @@
-let a = 180;
-let b = -50;
-let c = 50;
+let a = 18;
+let b = 3;
+let c = 20;
 
 if (a > 0 && b > 0 && c > 0)
   console.log(a + b + c === 180);
