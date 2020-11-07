@@ -50,5 +50,7 @@ for (let i = 0; i < 3; i += 1) {
 left_content.parentNode.removeChild(left_content);
 right_content.style.marginRight = 'auto';
 
+center_content.parentNode.style.backgroundColor = 'yellow';
+
 console.log(body);
 
