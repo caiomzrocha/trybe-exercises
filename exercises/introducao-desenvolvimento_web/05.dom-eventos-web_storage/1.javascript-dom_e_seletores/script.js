@@ -13,6 +13,7 @@
 
 let paragraphs = document.getElementsByTagName('p');
 let main_content = document.getElementsByClassName('main-content');
+let center_content = document.getElementsByClassName('center-content');
 
 function changeParagraphText() {
   paragraphs[0].innerText = "Em 2022 estarei empregado e recebendo um salário igual ou superior a R$ 3500,00.";
@@ -22,5 +23,10 @@ function changeColorMainContent() {
   main_content[0].style.backgroundColor = 'rgb(76,164,109)';
 } 
 
+function changeColorCenterContent() {
+  center_content[0].style.backgroundColor = 'white';
+}
+
 changeParagraphText();
 changeColorMainContent();
+changeColorCenterContent();
