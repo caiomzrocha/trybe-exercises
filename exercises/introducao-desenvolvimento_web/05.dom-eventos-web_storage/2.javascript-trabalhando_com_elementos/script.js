@@ -5,11 +5,13 @@ let center_content = document.createElement('div');
 let paragraph = document.createElement('p');
 let left_content = document.createElement('div');
 let right_content = document.createElement('div');
+let img = document.createElement('img');
 
 main_content.classList.add('main-content');
 center_content.classList.add('center-content');
 left_content.classList.add('left-content');
 right_content.classList.add('right-content');
+img.classList.add('small-image');
 
 body.appendChild(h1);
 body.appendChild(main_content);
@@ -17,6 +19,9 @@ main_content.appendChild(center_content);
 center_content.appendChild(paragraph);
 main_content.appendChild(left_content);
 main_content.appendChild(right_content);
+left_content.appendChild(img);
+
+img.setAttribute('src', 'https://picsum.photos/200');
 
 paragraph.innerText = 'Conteúdo central.';
 
