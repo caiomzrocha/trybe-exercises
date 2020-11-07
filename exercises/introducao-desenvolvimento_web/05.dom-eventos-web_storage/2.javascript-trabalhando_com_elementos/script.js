@@ -33,7 +33,12 @@ for (let i = 1; i <= 10; i += 1) {
 for (let i = 1; i <= 3; i += 1) {
   let h3 = document.createElement('h3');
   h3.innerText = 'h3 - ' + i;
-  count.appendChild(h3);
+  main_content.appendChild(h3);
+}
+
+let h3List = document.getElementsByTagName('h3');
+for (let i = 0; i < 3; i += 1) {
+  h3List[i].classList.add('description');
 }
 
 paragraph.innerText = 'Conteúdo central.';
