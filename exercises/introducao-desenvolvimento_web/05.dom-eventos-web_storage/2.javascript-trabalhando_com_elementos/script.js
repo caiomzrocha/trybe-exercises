@@ -1,3 +1,4 @@
+// adicao de elementos
 let body = document.querySelector('body');
 let h1 = document.createElement('h1');
 let main_content = document.createElement('div');
@@ -36,13 +37,17 @@ for (let i = 1; i <= 3; i += 1) {
   main_content.appendChild(h3);
 }
 
+paragraph.innerText = 'Conteúdo central.';
+img.setAttribute('src', 'https://picsum.photos/200');
+
+// alteracao e remocao
 let h3List = document.getElementsByTagName('h3');
+
 for (let i = 0; i < 3; i += 1) {
   h3List[i].classList.add('description');
 }
 
-paragraph.innerText = 'Conteúdo central.';
-img.setAttribute('src', 'https://picsum.photos/200');
+left_content.parentNode.removeChild(left_content);
 
 console.log(body);
 
