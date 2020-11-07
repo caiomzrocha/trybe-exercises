@@ -3,7 +3,6 @@
    - document.getElementById()
    - document.getElementsByClassName()
    - document.getElementsByTagName()
-   Crie uma função que modifique todo o texto da tag <p> para maiúsculo. 
    Crie uma função que exiba o conteúdo de todas as tags <p> no console.
  */
 
@@ -28,7 +27,14 @@ function setTitle() {
   title[0].innerText = 'Exercício 5.1 - JavaScript';
 }
 
+function upperCaseParagraphs() {
+  for (p of paragraphs) {
+    p.innerText = p.innerText.toUpperCase();
+  }
+}
+
 setParagraphText();
 setColorMainContent();
 setColorCenterContent();
 setTitle();
+upperCaseParagraphs();
