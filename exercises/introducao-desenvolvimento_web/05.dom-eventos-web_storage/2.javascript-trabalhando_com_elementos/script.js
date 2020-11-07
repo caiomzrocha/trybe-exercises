@@ -42,9 +42,14 @@ img.setAttribute('src', 'https://picsum.photos/200');
 
 // alteracao e remocao
 let h3List = document.getElementsByTagName('h3');
+let liList = document.getElementsByTagName('li');
 
 for (let i = 0; i < 3; i += 1) {
   h3List[i].classList.add('description');
+}
+
+for (let i = 9; i >= 8; i -= 1) {
+  liList[i].parentNode.removeChild(liList[i]);
 }
 
 left_content.parentNode.removeChild(left_content);
