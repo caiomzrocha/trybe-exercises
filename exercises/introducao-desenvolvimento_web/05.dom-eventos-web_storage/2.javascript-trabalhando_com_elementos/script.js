@@ -48,6 +48,7 @@ for (let i = 0; i < 3; i += 1) {
 }
 
 left_content.parentNode.removeChild(left_content);
+right_content.style.marginRight = 'auto';
 
 console.log(body);
 
