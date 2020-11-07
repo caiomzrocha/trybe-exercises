@@ -6,6 +6,7 @@ let paragraph = document.createElement('p');
 let left_content = document.createElement('div');
 let right_content = document.createElement('div');
 let img = document.createElement('img');
+let count = document.createElement('ul');
 
 main_content.classList.add('main-content');
 center_content.classList.add('center-content');
@@ -20,10 +21,16 @@ center_content.appendChild(paragraph);
 main_content.appendChild(left_content);
 main_content.appendChild(right_content);
 left_content.appendChild(img);
+right_content.appendChild(count);
 
-img.setAttribute('src', 'https://picsum.photos/200');
+for (let i = 1; i <= 10; i += 1) {
+  let li = document.createElement('li');
+  li.innerText = i;
+  count.appendChild(li);
+}
 
 paragraph.innerText = 'Conteúdo central.';
+img.setAttribute('src', 'https://picsum.photos/200');
 
 console.log(body);
 
