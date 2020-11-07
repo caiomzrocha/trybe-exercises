@@ -1,11 +1,3 @@
-/*
-   Aqui você vai modificar os elementos já existentes utilizando apenas as funções:
-   - document.getElementById()
-   - document.getElementsByClassName()
-   - document.getElementsByTagName()
-   Crie uma função que exiba o conteúdo de todas as tags <p> no console.
- */
-
 let paragraphs = document.getElementsByTagName('p');
 let main_content = document.getElementsByClassName('main-content');
 let center_content = document.getElementsByClassName('center-content');
@@ -33,8 +25,16 @@ function upperCaseParagraphs() {
   }
 }
 
+function showParagraphs() {
+  for (p of paragraphs) {
+    console.log(p.innerText);
+  }
+}
+
 setParagraphText();
 setColorMainContent();
 setColorCenterContent();
 setTitle();
 upperCaseParagraphs();
+showParagraphs();
+
