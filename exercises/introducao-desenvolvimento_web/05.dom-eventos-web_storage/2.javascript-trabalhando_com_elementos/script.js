@@ -29,6 +29,12 @@ for (let i = 1; i <= 10; i += 1) {
   count.appendChild(li);
 }
 
+for (let i = 1; i <= 3; i += 1) {
+  let h3 = document.createElement('h3');
+  h3.innerText = 'h3 - ' + i;
+  count.appendChild(h3);
+}
+
 paragraph.innerText = 'Conteúdo central.';
 img.setAttribute('src', 'https://picsum.photos/200');
 
