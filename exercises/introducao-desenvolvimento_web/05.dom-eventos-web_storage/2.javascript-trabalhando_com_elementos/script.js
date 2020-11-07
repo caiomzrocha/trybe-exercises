@@ -13,6 +13,7 @@ center_content.classList.add('center-content');
 left_content.classList.add('left-content');
 right_content.classList.add('right-content');
 img.classList.add('small-image');
+h1.classList.add('title');
 
 body.appendChild(h1);
 body.appendChild(main_content);
