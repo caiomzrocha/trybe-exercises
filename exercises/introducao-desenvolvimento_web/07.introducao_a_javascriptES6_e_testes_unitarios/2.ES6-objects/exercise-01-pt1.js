@@ -41,7 +41,35 @@ const customerInfo = (order) => {
 customerInfo(order);
 
 const orderModifier = (order) => {
-  // Adicione abaixo as informações necessárias.
+  const pizzas = Object.keys(order.order.pizza);
+  
+  const drinks = (drinkOrder) => {
+    const listOfDrinks = Object.keys(drinkOrder);
+    let drinkNames = [];
+    let valueOfDrinks = 0;
+    let drinksAndValues = [];
+
+    for (drink of listOfDrinks) {
+      drinkNames.push(drinkOrder[drink].type);
+      valueOfDrinks += drinkOrder[drink].price * drinkOrder[drink].amount;
+    }
+
+    drinksAndValues.push(drinkNames);
+    drinksAndValues.push(valueOfDrinks);
+    return drinksAndValues;
+  };
+
+  let value = 0;
+  //let pedido = pizzas.concat(drink);
+
+  console.log(drinks(order.order.drinks));
+
+  for (food of pizzas) {
+    value += order.order.pizza[food].price;
+  }
+
+  console.log(`Olá ${order.name}, o total do seu pedido de ${pizzas} é R$ ${value}.`);
+  //console.log(pedido);
 
 }
 
