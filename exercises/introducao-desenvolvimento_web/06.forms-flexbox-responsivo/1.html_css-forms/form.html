@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form</title>
+</head>
+<body>
+  <fieldset>
+    <legend>Cadastro de Currículo</legend>
+    <label for="inputName">Nome:</label>
+    <input id="inputName" name="name" type="text" maxlength="40" required>
+    <br>
+    <label for="inputEmail">E-mail:</label>
+    <input id="inputEmail" name="email" type="email" maxlength="50" required>
+    <br>
+    <label for="inputCpf">CPF:</label>
+    <input id="inputCpf" name="cpf" type="text" maxlength="11" required>
+    <br>
+    <label for="inputAddress">Endereço:</label>
+    <input id="inputAddress" name="address" type="text" maxlength="200" required>
+    <br>
+    <label for="inputCity">Cidade:</label>
+    <input id="inputCity" name="city" type="text" maxlength="28" required>
+    <br>
+    <label for="inputState">Estado:</label>
+    <select required>
+      <option value="AC">Acre</option>
+      <option value="AL">Alagoas</option>
+      <option value="AP">Amapá</option>
+      <option value="AM">Amazonas</option>
+      <option value="BA">Bahia</option>
+    </select>
+    <br>
+    <label>Type:</label>
+    <input id="inputTypeApartment" name="type" type="radio" required>
+    <label for="inputTypeApartment">Apartamento</label>
+    <input id="inputTypeHouse" name="type" type="radio" required>
+    <label for="inputTypeHouse">Casa</label>
+    <br>
+  </fieldset>
+
+  <fieldset>
+    <legend>Último Trabalho</legend>
+    <label for="inputSummary">Resumo do Currículo</label>
+    <br>
+    <textarea id="inputSummary" name="summary" maxlength="1000" required></textarea>
+    <br>
+    <label for="inputOffice">Cargo</label>
+    <input id="inputOffice" name="office" type="text" maxlength="40" required>
+    <br>
+    <label for="inputDescription">Descrição do Cargo</label>
+    <input id="inputDescription" name="description" type="text" maxlength="500" required>
+    <br>
+    <label for="inputDate">Data de Início</label>
+    <input id="inputDate" name="date" type="date" formaction="dd-mm-yyyy" required>
+    <br>
+
+
+  </fieldset>
+</body>
+</html>
